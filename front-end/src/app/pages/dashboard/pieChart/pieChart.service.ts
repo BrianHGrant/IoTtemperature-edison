@@ -12,9 +12,9 @@ export class PieChartService {
     return [
       {
         color: pieColor,
-        description: 'Composter Score',
-        stats: '57,820',
-        icon: 'face',
+        description: 'Compost Index',
+        stats: '85%',
+        icon: 'sprout',
       }
     ];
   }

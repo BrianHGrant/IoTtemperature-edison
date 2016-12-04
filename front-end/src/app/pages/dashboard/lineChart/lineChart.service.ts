@@ -1,17 +1,20 @@
 import {Injectable} from '@angular/core';
 import {BaThemeConfigProvider, colorHelper, layoutPaths} from '../../../theme';
+import{ Http, Headers, RequestOptions, URLSearchParams } from '@angular/http';
+import { Observable }       from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class LineChartService {
 
-  constructor(private _baConfig:BaThemeConfigProvider) {
+  constructor(private _baConfig:BaThemeConfigProvider, private http: Http) {
   }
 
   getData() {
 
     var layoutColors = this._baConfig.get().colors;
     var graphColor = this._baConfig.get().colors.custom.dashboardLineChart;
-
+  
     return {
       type: 'serial',
       theme: 'blur',
