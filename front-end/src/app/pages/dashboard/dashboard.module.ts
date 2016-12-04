@@ -8,11 +8,12 @@ import { routing }       from './dashboard.routing';
 
 import { PieChart } from './pieChart';
 import { LineChart } from './lineChart';
-
+import { ChartistJs } from './chartistJs';
 import { Todo } from './todo';
 import { Calendar } from './calendar';
 import { CalendarService } from './calendar/calendar.service';
 import { LineChartService } from './lineChart/lineChart.service';
+import { ChartistJsService } from './chartistJs/chartistJs.service';
 import { PieChartService } from './pieChart/pieChart.service';
 import { TodoService } from './todo/todo.service';
 
@@ -26,6 +27,7 @@ import { TodoService } from './todo/todo.service';
   declarations: [
     PieChart,
     LineChart,
+    ChartistJs,
     Todo,
     Calendar,
     Dashboard
@@ -33,6 +35,7 @@ import { TodoService } from './todo/todo.service';
   providers: [
     CalendarService,
     LineChartService,
+    ChartistJsService,
     PieChartService,
     TodoService,
   ]
