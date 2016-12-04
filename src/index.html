@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>Compos-it</title>
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Cabin+Sketch|Pacifico|Quicksand|Raleway|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cabin+Sketch|Pacifico" rel="stylesheet">
   <link rel='stylesheet' href='vendor/styles/normalize.css'>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/layout.css">
@@ -32,46 +32,24 @@
     </header>
 
     <main>
-      <!-- <div class="background-image">
-        <img src="images/compost.jpg"/>
-      </div> -->
-
       <div class="tab-container">
         <section id="home-page" class="tab-content">
-          <div class="signin">
-            <h1>Welcome!</h1>
-            <p id="question">Interested in composting but have some questions?</p>
-            <p id="pitch">Composting is a significant way to contribute to a sustainable community. Compos-it can help you identify ways you can optimize the health of your compost project by monitoring the components involved in cultivating an ideal compost ecosystem.</p>
-
-            <h2>Sign-in</h2>
-            <form name="signin" action="" method="" accept-charset="UTF-8">
-              <label for="username">Username:</label><br>
-              <input type="text" name="username" placeholder="myusername" required><br>
-              <label for="password">Password:</label><br>
-              <input type="text" name="password" placeholder="mypassword" required><br>
-
-              <div class="signin-submit">
-                <button id="signin-submit" type="button">Sign-in</button><br>
-              </div>
-            </form>
-
-            <h2>Create an account</h2>
-            <form name="signup" action="" method="" accept-charset="UTF-8">
-              <label for="username">Username:</label><br>
-              <input type="text" name="username" placeholder="myusername" required><br>
-              <label for="password">Password:</label><br>
-              <input type="text" name="password" placeholder="mypassword" required><br>
-
-              <div class="signup-submit">
-                <button id="signup-submit" type="button">Create account</button><br>
-              </div>
-            </form>
+          <div class="forms">
+            <div class="signin-form">
+              <form name="signin" action="" method="" accept-charset="UTF-8">
+                <label for="username">Username:</label>
+                <input type="text" name="username" placeholder="myusername" required><br>
+                <label for="password">Password:</label>
+                <input type="text" name="password" placeholder="mypassword" required>
+                <button id="signin-submit" type="button">Sign-in</button>
+              </form>
+            </div>
           </div>
+        </section>
 
         <section id="dashboard-page" class="tab-content">
           <!-- Link to templated dashboard -->
         </section>
-
       </div>
     </main>
   </div>
